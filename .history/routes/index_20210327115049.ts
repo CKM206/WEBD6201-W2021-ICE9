@@ -22,31 +22,25 @@ router.get('/about', function(req, res, next)
 /* GET Projects page. */
 router.get('/projects', function(req, res, next) 
 {
-  res.render('index', { title: 'Our Projects', page: 'projects' });
+  res.render('index', { title: 'Projects', page: 'projects' });
 });
 
 /* GET Services page. */
 router.get('/services', function(req, res, next) 
 {
-  res.render('index', { title: 'Our Services', page: 'services' });
+  res.render('index', { title: 'Services', page: 'services' });
 });
 
 /* GET Contact page. */
 router.get('/contact', function(req, res, next) 
 {
-  res.render('index', { title: 'Contact Us', page: 'contact' });
+  res.render('index', { title: 'Contact', page: 'contact' });
 });
 
 /* GET Login page. */
 router.get('/login', function(req, res, next) 
 {
   res.render('index', { title: 'Login', page: 'login' });
-});
-
-/* GET Register page. */
-router.get('/register', function(req, res, next) 
-{
-  res.render('index', { title: 'Register', page: 'register' });
 });
 
 module.exports = router;
