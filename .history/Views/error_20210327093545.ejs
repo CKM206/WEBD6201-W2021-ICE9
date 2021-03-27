@@ -1,14 +1,13 @@
-<!-- 
-    Hide the Error Stack, leaving here just in case we ever need it (Fully commented out)
-    <pre><%# error.stack %></pre> 
--->
+<h1><%= message %></h1>
+<h2><%= error.status %></h2>
+<!-- <pre><%# error.stack %></pre> -->
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Error: <%= error.statusCode %> - <%= message %></title>
+    <title>ERROR: <%= message %> - <%= error.status %></title>
     <!-- CSS Section -->
     <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./@fortawesome/fontawesome-free/css/all.min.css">
@@ -24,7 +23,7 @@
 
     <!-- Main Content -->
     <main class="container">
-      <h1>Error: <%= error.statusCode %> - Page <%= message %></h1>
+      <h1>ERROR: <%= message %> - <%= error.status %></h1>
     </main>
     <!-- Main Footer -->
     <footer>
